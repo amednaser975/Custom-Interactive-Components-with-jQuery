@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery Practical Course</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/all.min.css"/>
+        <script src="JS/all.min.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <ul class="navbar">
+            <li><a href="#" data-scroll="home">Home</a></li>
+            <li><a href="#" data-scroll="about-us">About Us</a></li>
+            <li><a href="#" data-scroll="services">Services</a></li>
+            <li><a href="#" data-scroll="solutions">Solutions</a></li>
+            <li><a href="#" data-scroll="products">Products</a></li>
+            <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+        </ul>
+        <!-- End Navbar -->
+        <!-- Start Fixed Menu-->
+        <div class="fixed-menu">
+            <i class="fas fa-cog"></i>
+            <h3>Change Colors</h3>
+            <ul class="change-colors">
+                <li data-color="blue"></li>
+                <li data-color="red"></li>
+                <li data-color="green"></li>
+                <li data-color="purple"></li>
+            </ul>
+            <h3>Important Links</h3>
+            Testing Links
+        </div>
+        <!-- End Fixed Menu-->
+        <!-- Start Sections -->
+        <div id="home" class="block">
+            <h2 class="skin-color">Home</h2>
+            <!-- Start Popups -->
+            <div class="popups container" style="text-align: left">
+                <span class="show-popup" data-popup="first-popup">Show 1st Popup</span>
+                <span class="show-popup" data-popup="second-popup">Show 2nd Popup</span>
+            </div>
+            <!-- End Popups -->
+            <!-- Start Error Message -->
+            <div class="error-message">
+                This is Error Message This is Error Message 
+            </div>
+            <!-- End Error Message -->
+            <div class="container">
+                <!-- Start Buttons with Effects -->
+                <div class="buttons-effects" style="text-align: left">
+                    <button class="buttons-effect from-left">
+                        <span>From Left</span>
+                    </button>
+                    <button class="buttons-effect from-top">
+                        <span>From Top</span>
+                    </button>
+                    <button class="buttons-effect border-left">
+                        <span>Border From Left</span>
+                    </button>
+                    <button class="buttons-effect border-top">
+                        <span>Border From Top</span>
+                    </button>
+                </div>
+                <div style="text-align: left">
+                    <button class="buttons-effect bounce first">
+                        Bounce
+                    </button>
+                    <button class="buttons-effect bounce second">
+                        Bounce
+                    </button>
+                    <button class="buttons-effect bounce third">
+                        Bounce
+                    </button>
+                </div>
+                <!-- End Buttons with Effects -->
+                <!-- Start Animated Progress (16)-->
+                <div class="animated-progress progress-blue">
+                    <span data-progress="45"></span>
+                </div>
+                <div class="animated-progress progress-red">
+                    <span data-progress="25"></span>
+                </div>
+                <div class="animated-progress progress-green">
+                    <span data-progress="80"></span>
+                </div>
+                <div class="animated-progress progress-purple">
+                    <span data-progress="25"></span>
+                </div>
+            </div>
+            <!-- End Animated Progress -->
+            <!-- Start Gallery -->
+            <div class="gallery">
+                <div class="master-img">
+                    <i class="skin-background alaa fa fa-chevron-left fa-lg"></i>
+                    <i class="skin-background alaa fa fa-chevron-right fa-lg"></i>
+                    <img src="Images/04%20(1).jpg" alt=""/>
+                </div>
+                <div class="thumbnails">
+                    <img class="selected" src="Images/04%20(1).jpg" alt=""/>
+                    <img src="Images/04%20(2).jpg" alt=""/>
+                    <img src="Images/04%20(3).jpg" alt=""/>
+                    <img src="Images/04%20(4).jpg" alt=""/>
+                    <img src="Images/05.jpg" alt=""/>
+                </div>
+            </div>
+            <!-- End Gallery -->
+            <!-- Start Product -->
+            <div class="products">
+                <div class="product">
+                    <h3>Product One</h3>
+                    <span class="date">1/4/2020</span>
+                    <img src="http://placehold.it/100/DDD/000" alt=""/>
+                    <i class="fas fa-plus fa-lg icon"></i>
+                    <p class="description">This is Test Description</p>
+                </div>
+                <div class="product">
+                    <h3>Product Two</h3>
+                    <span class="date">1/4/2020</span>
+                    <img src="http://placehold.it/100/DDD/000" alt=""/>
+                    <i class="fas fa-plus fa-lg icon"></i>
+                    <p class="description">This is Test Description</p>
+                </div>
+            </div>
+            <!-- End Product -->
+            <!-- Start Grid/List Products -->
+            <div class="items list-view">
+                <div class="view-options">
+                    <i class="icon fas fa-list fa-fw fa-2x active" data-class="list-view"></i>
+                    <i class="icon fas fa-th-large fa-fw fa-2x" data-class="grid-view"></i>
+                </div>
+                <div class="item first">
+                    <h3>Item One</h3>
+                    <span class="date">1/4/2020</span>
+                    <img src="http://placehold.it/100/DDD/000" alt=""/>
+                    <i class="fa fa-plus fa-lg icon"></i>
+                    <p class="description">This is Test Description</p>
+                </div>
+                <div class="item">
+                    <h3>Item Two</h3>
+                    <span class="date">1/4/2020</span>
+                    <img src="http://placehold.it/100/DDD/000" alt=""/>
+                    <i class="fa fa-plus fa-lg icon"></i>
+                    <p class="description">This is Test Description</p>
+                </div>
+            </div>
+            <!-- End Grid/List Products -->
+            <!-- Start Our Form -->
+            <div class="our-form">
+                <form>
+                    <div>
+                        <input class="detect-unicode" type="text" required="required" placeholder="Type Your Name"/>
+                        <span class="the-message">Please Fill This Field</span>
+                        <div class="unicode"></div>
+                    </div>
+                    <div>
+                        <input class="auto-direction" type="email" required="required" placeholder="Type Your Email"/>
+                        <span class="the-message">Please Fill This Field</span>
+                    </div>
+                    <div>
+                        <input type="password" required="required" placeholder="Type Your Password"/>
+                        <span class="the-message">Please Fill This Field</span>
+                    </div>
+                    <div>
+                        <textarea required="required" placeholder="Type Your Message"></textarea>
+                        <span class="the-message">Please Fill This Field</span>
+                    </div>
+                    <div>
+                        <input class="add-tag" type="text" placeholder="Please Type Tags then Press[,]"/>
+                        <div class="tags"></div>
+                    </div>
+                    <div>
+                        <input type="file"/>
+                    </div>
+                    <input type="submit" value="Send"/>
+                </form>
+            </div>
+            <!-- End Our Form -->
+            <!-- Start trimmed Text -->
+            <div class="trimmed-texts">
+                <p class="p-one">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p class="p-two">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p class="p-three">Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>            
+            </div>
+            <!-- End trimmed Text -->
+            <!-- Start Same Height Divs -->
+            <div class="container same-height">
+                <div class="one">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+                <div class="two">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </div>
+                <div class="three last">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </div>
+            </div>
+            <!-- End Same Height Divs -->
+            <!-- Start Shuffling Cards -->
+            <div class="cards">
+                <div class="card card-one"></div>
+                <div class="card card-two"></div>
+                <div class="card card-three"></div>
+                <div class="card card-four"></div>
+                <div class="card card-five"></div>
+                <div class="card card-six"></div>
+                <div class="card card-seven"></div>
+            </div>
+            <!-- End Shuffling Cards -->
+            <!-- Start Blink Warning -->
+            <div>
+                <h3 class="blink-warning">This is Warning</h3>
+            </div>
+            <!-- End Blink Warning -->
+            <!-- Start ToDo List -->
+            <div class="todo-list">
+                <h3>ToDo List</h3>
+                <ul class="tasks">
+                    <li>Finishing Python Course</li>
+                    <li>Learning The New CSS Lesson</li>
+                    <li>Call My Friend Ahmed</li>
+                </ul>
+                <form class="add-task" method="POST">
+                    <input class="task-input" type="text" name="task" placeholder="Add New Task"/>
+                </form>
+            </div>
+            <!-- End ToDo List -->
+            <!-- Start Type Writting Effects -->
+            <div>
+                <p class="typer" data-text="Hello Ahmed Nasr Eldien Hamdy!!"></p>
+            </div>
+            <!-- End Type Writting Effects -->
+            <!-- Start Summary Table -->
+            <div class="container">
+                <table class="summary">
+                    <tr>
+                        <td>Name</td>
+                        <td>Value</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td>Data One</td>
+                        <td>10 Items</td>
+                        <td class="price">100</td>
+                    </tr>
+                    <tr>
+                        <td>Data Two</td>
+                        <td>5 Items</td>
+                        <td class="price">80</td>
+                    </tr>
+                    <tr>
+                        <td>Data Three</td>
+                        <td>7 Items</td>
+                        <td class="price">20</td>
+                    </tr>
+                    <tr>
+                        <td>Data Four</td>
+                        <td>1 Items</td>
+                        <td class="price">200</td>
+                    </tr>
+                    <tr>
+                        <td>Data Five</td>
+                        <td>3 Items</td>
+                        <td class="price">40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total: </td>
+                        <td class="total"></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End Summary Table -->
+            <!-- Start Auto Changing Notes -->
+            <div class="text-ticker">
+                <h3>Today Notes</h3>
+                <ul class="ticker-list">
+                    <li class="active">This Is The Line Number One To Test</li>
+                    <li>This Is The Line Number Two To Test</li>
+                    <li>This Is The Line Number Three To Test</li>
+                    <li>This Is The Line Number Four To Test</li>
+                    <li>This Is The Line Number Five To Test</li>
+                    <li>This Is The Line Number Six To Test</li>
+                </ul>
+            </div>
+            <!-- End Start Auto Changing Notes -->
+            <!-- Start Dynamic Tabs -->
+            <div class="container" style="text-align: left">
+                <span class="switch-tabs">Switch View</span>
+                <div class="dynamic-tabs">
+                    <ul class="tabs-list">
+                        <li class="active" data-content=".content-one">One</li>
+                        <li data-content=".content-two">Two</li>
+                        <li data-content=".content-three">Three</li>
+                        <li data-content=".content-four">Four</li>
+                        <li data-content=".content-five">Five</li>
+                    </ul>
+                    <div class="content-list">
+                        <div class="content-one">This is Content Number One</div>
+                        <div class="content-two">This is Content Number Two</div>
+                        <div class="content-three">This is Content Number Three</div>
+                        <div class="content-four">This is Content Number Four</div>
+                        <div class="content-five">This is Content Number Five</div>
+                    </div>
+                </div>
+            </div>  
+            <!-- End Dynamic Tabs -->
+            <!-- Start Email Suggest Box -->
+            <div class="container" style="text-align: left">
+                <form>
+                    <input
+                        type="email" 
+                        class="email-suggest"
+                        name="email" 
+                        autocomplete="off"
+                        placeholder="Type Your Email" />
+                    <!--<ul class="suggest-box">
+                        <li>@Gmail</li>
+                        <li>@Yahoo</li>
+                        <li>@Hotmail</li>
+                        <li>@Outlook</li>
+                    </ul> -->
+                </form>
+            </div>
+            <!-- End Email Suggest Box -->
+        </div>
+        <div id="about-us" class="block">
+            <h2 class="skin-color">About Us</h2>
+        </div>
+        <div id="services" class="block">
+            <h2 class="skin-color">Services</h2>
+        </div>
+        <div id="solutions" class="block">
+            <h2 class="skin-color">Solutions</h2>
+        </div>
+        <div id="products" class="block">
+            <h2 class="skin-color">Products</h2>
+        </div>
+        <div id="contact-us" class="block">
+            <h2 class="skin-color">Contact Us</h2>
+        </div>
+        <!-- End Sections -->
+        <a class="scroll-to-top skin-background" href="#">
+            <i class="fa fa-chevron-up" aria-hidden='true'></i>
+            <!--<i class="fas fa-chevron-up" aria-hidden='true'></i>-->
+        </a>
+        <!--Create Popup (9) -->
+        <div class="popup first-popup">
+            <div class="inner">
+              <h2>This is Our First Popup</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <button class="close">Close</button>
+            </div>
+        </div>
+        <div class="popup second-popup">
+            <div class="inner">
+              <h2>This is Our Second Popup</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <button class="close">Close</button>
+            </div>
+        </div>
+        <script src="JS/jquery-3.4.1.min.js"></script>
+        <script src="JS/plugin.js"></script>
+    </body>
+</html>
